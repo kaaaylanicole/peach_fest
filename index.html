@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Peach Fest 2021</title>
 </head>
@@ -14,33 +15,51 @@
 </header>
 
 <div class="days">
-    <button type="button" class="button">Friday</button>
-    <button type="button" class="button">Saturday</button>
-    <button type="button" class="button">Sunday</button>
+    <button type="button" class="button" onclick="myFunction()">Friday</button>
+    <button type="button" class="button" onclick="myFunction()">Saturday</button>
+    <button type="button" class="button" onclick="myFunction()">Sunday</button>
 </div>
 
 <body>
 
     <main>
         <div>
-            <div class="day-wrapper">
-                <div class="friday">
+            <div class="day-wrapper" id="friday">
+                <div class="friday-artist-1">
                     <img src="images/harry_styles.png" alt="harry styles">
-                    <p>Harry Styles</p>
+                    <p class="artist">Harry Styles</p>
                 </div>
-            </div>
 
-            <div class="day-wrapper">
-                <div class="saturday">
+                <div class="friday-artist-2">
                     <img src="images/fleetwood_mac.png" alt="fleetwood mac">
-                    <p>Fleetwood Mac</p>
+                    <p class="artist">Fleetwood Mac</p>
                 </div>
             </div>
 
-            <!-- <div class="day-wrapper">
-                <div>image</div>
-                <div><h1>Tame Impala</h1></div>
-            </div> -->
+            <div class="day-wrapper" id="saturday">
+                <div class="saturday-artist-1">
+                    <img src="" alt="the maine">
+                    <p class="artist">The Maine</p>
+                </div>
+
+                <div class="saturday-artist-2">
+                    <img src="" alt="lany">
+                    <p class="artist">Lany</p>
+                </div>
+            </div>
+
+            <div class="day-wrapper" id="sunday">
+                <div class="sunday-artist-1">
+                    <img src="" alt="Sam Fender">
+                    <p class="artist">Sam Fender</p>
+                </div>
+
+                <div class="sunday-artist-2">
+                    <img src="" alt="The 1975">
+                    <p class="artist">The 1975</p>
+                </div>
+            </div>
+        </div>
 
             <div class="lineup">
                 <p>Sam Fender • The Lathums • DMA’S • Catfish and the Bottlemen • Neck Deep • YUNGBLUD • The Maine • The 1975 • The Band Camino • Arctic Monkeys • Machine Gun Kelly • Jack Harlow • slowthai • Maggie Rogers • LANY • Tame Impala • Oasis • Gerry Cinnamon • Hot Since 82</p>

@@ -23,6 +23,7 @@ main {
   background-repeat: repeat;
   font-family: 'bebas neue';
   padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .button {
@@ -43,17 +44,25 @@ main {
   color: #FD7639;
 }
 
-.day-wrapper {
-
-}
-
 .days {
   display: flex;
   justify-content: space-evenly;
   background-color: #FD7639;
 }
 
-.friday {
+.day-wrapper {
+
+}
+
+/* .artist-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 4em;
+  padding-bottom: .5em;
+} */
+
+.friday-artist-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -61,18 +70,55 @@ main {
   padding-bottom: .5em;
 }
 
-.saturday {
+.friday-artist-2 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   font-size: 4em;
-  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.saturday-artist-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 4em;
+  padding-bottom: .5em;
+}
+
+.saturday-artist-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  font-size: 4em;
+  padding-bottom: .5em;
+}
+
+.sunday-artist-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 4em;
+  padding-bottom: .5em;
+}
+
+.sunday-artist-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  font-size: 4em;
+  padding-bottom: .5em;
+}
+
+.artist {
+  padding: 1em 1em 1em 1em;
 }
 
 .lineup {
   font-size: 2em;
   text-align: center;
-  margin: 90px 200px 0px 200px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .buy-tickets {
@@ -84,10 +130,11 @@ main {
   border-radius: 35px;
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 .buy-tickets:hover {
-  background-color: #312B24;
+  background-color: #FD7639;
   color: white;
   }
 
@@ -103,28 +150,28 @@ footer {
 }
 
 @media only screen and (max-width: 920px){
-  .friday {
+  .friday-artist-1 {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 0em;
   }
-  .saturday {
+  .friday-artist-2 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 0em;
+    padding: 0em 0em 0em 0em;
   }
 }
 
 @media only screen and (max-width: 540px){
-  .friday {
+  .friday-artist-1 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 0em;
+    padding: 0em 0em 0em 0em;
   }
-  .saturday {
+  .friday-artist-2 {
     display: flex;
     flex-direction: column;
     text-align: center;
