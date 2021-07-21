@@ -39,7 +39,9 @@ main {
   text-align: center;
 }
 
-.button:hover {
+.button:hover,
+.button:focus,
+.button:active {
   background-color: #FFFFFF;
   color: #FD7639;
 }
@@ -50,19 +52,7 @@ main {
   background-color: #FD7639;
 }
 
-.day-wrapper {
-
-}
-
-/* .artist-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 4em;
-  padding-bottom: .5em;
-} */
-
-.friday-artist-1 {
+.friday-artist-1, .saturday-artist-1, .sunday-artist-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -70,7 +60,7 @@ main {
   padding-bottom: .5em;
 }
 
-.friday-artist-2 {
+.friday-artist-2, .saturday-artist-2, .sunday-artist-2 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -78,36 +68,8 @@ main {
   padding-bottom: .5em;
 }
 
-.saturday-artist-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 4em;
-  padding-bottom: .5em;
-}
-
-.saturday-artist-2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  font-size: 4em;
-  padding-bottom: .5em;
-}
-
-.sunday-artist-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 4em;
-  padding-bottom: .5em;
-}
-
-.sunday-artist-2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  font-size: 4em;
-  padding-bottom: .5em;
+.hide {
+  display: none;
 }
 
 .artist {
@@ -146,35 +108,39 @@ footer {
   max-width: 20em;
   padding: 2em 2em 2em 15em;
   display: flex;
-  justify-content: ;
+  justify-content: left;
+}
+
+.social-icon {
+  max-width: 20em;
+  padding: 2em 2em 2em 15em;
+  display: flex;
 }
 
 @media only screen and (max-width: 920px){
-  .friday-artist-1 {
+  .friday-artist-1, .friday-artist-2, .saturday-artist-1, .saturday-artist-2, .sunday-artist-1, .sunday-artist-2 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 0em;
+    margin: 0 auto;
   }
-  .friday-artist-2 {
+
+  .days {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 0em 0em 0em 0em;
   }
 }
 
 @media only screen and (max-width: 540px){
-  .friday-artist-1 {
+  .friday-artist-1, .friday-artist-2, .saturday-artist-1, .saturday-artist-2, .sunday-artist-1, .sunday-artist-2 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0em 0em 0em 0em;
+    margin: 0 auto;
   }
-  .friday-artist-2 {
+
+  .days {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-top: 0em;
   }
 }

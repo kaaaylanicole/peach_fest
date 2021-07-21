@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Peach Fest 2021</title>
 </head>
@@ -15,9 +16,9 @@
 </header>
 
 <div class="days">
-    <button type="button" class="button" onclick="myFunction()">Friday</button>
-    <button type="button" class="button" onclick="myFunction()">Saturday</button>
-    <button type="button" class="button" onclick="myFunction()">Sunday</button>
+    <button type="button" class="button" id="button-friday" onclick="toggleDays('friday')">Friday</button>
+    <button type="button" class="button" id="button-saturday" onclick="toggleDays('saturday')">Saturday</button>
+    <button type="button" class="button" id="button-sunday" onclick="toggleDays('sunday')">Sunday</button>
 </div>
 
 <body>
@@ -36,26 +37,26 @@
                 </div>
             </div>
 
-            <div class="day-wrapper" id="saturday">
+            <div class="day-wrapper hide" id="saturday">
                 <div class="saturday-artist-1">
-                    <img src="" alt="the maine">
-                    <p class="artist">The Maine</p>
+                    <img src="images/arctic_monkeys.jpg" alt="arctic monkeys">
+                    <p class="artist">Arctic Monkeys</p>
                 </div>
 
                 <div class="saturday-artist-2">
-                    <img src="" alt="lany">
-                    <p class="artist">Lany</p>
+                    <img src="images/tame_impala.jpg" alt="tame impala">
+                    <p class="artist">Tame Impala</p>
                 </div>
             </div>
 
-            <div class="day-wrapper" id="sunday">
+            <div class="day-wrapper hide" id="sunday">
                 <div class="sunday-artist-1">
-                    <img src="" alt="Sam Fender">
+                    <img src="images/sam_fender.jpg" alt="Sam Fender">
                     <p class="artist">Sam Fender</p>
                 </div>
 
                 <div class="sunday-artist-2">
-                    <img src="" alt="The 1975">
+                    <img src="images/the_1975.jpg" alt="The 1975">
                     <p class="artist">The 1975</p>
                 </div>
             </div>
@@ -70,6 +71,8 @@
     
     <footer>
         <img class="footer-logo"src="images/PF_logo.png" alt="PF_logo">
+        <!-- <img class="social-icon"src="images/instagram.png" alt="instagram icon">
+        <img class="social-icon"src="images/twitter.png" alt="twitter icon"> -->
      </footer>
 
 </body>

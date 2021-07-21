@@ -1,8 +1,13 @@
-function myFunction() {
-    var x = document.getElementById("friday");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+function toggleDays(day) {
+    let dayWrappers = document.getElementsByClassName('day-wrapper')
+    dayWrappers = Array.prototype.slice.call( dayWrappers )
+    dayWrappers.forEach((dayWrapper) =>{
+      if (dayWrapper.id==day){
+        dayWrapper.classList.remove('hide')
+      }
+      else{
+        dayWrapper.classList.add('hide')
+
+      }
+    })
   }
