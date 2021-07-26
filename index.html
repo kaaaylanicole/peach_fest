@@ -73,8 +73,25 @@
                 </div>
             </div>
         </div>
-
-        <button type="button" class="buy-tickets">Buy Tickets</button>
+        
+        <button type="button" class="buy-tickets" onclick="showForm()">Buy Tickets</button>    
+        <div class="contact-form hide" id="contact-form">
+                <div class="contact-form--wrap">
+                    <div>   
+                        <div class="close-form" onclick="hideForm()">
+                            X
+                        </div>
+                        <form>
+                            <label class="form-content" for="email">More Info About Peach Fest</label>
+                            <br>
+                            <div class="form-field">
+                                <input type="text" id="email" name="email" placeholder="Your email address...">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
     </main>
     
     <footer>

@@ -11,3 +11,13 @@ function toggleDays(day) {
       }
     })
   }
+
+function showForm() {
+  let formDiv = document.getElementById('contact-form')
+  formDiv.classList.remove('hide')
+}
+
+function hideForm() {
+  let formDiv = document.getElementById('contact-form')
+  formDiv.classList.add('hide')
+}
