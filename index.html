@@ -15,6 +15,7 @@
     <img class="PF_logo" src="images/PF_logo.png" alt="PF_logo">
 </header>
 
+<!-- Toggle between Friday, Saturday and Sunday festival days with JS hide & show -->
 <div class="days">
     <button type="button" class="button" id="button-friday" onclick="toggleDays('friday')">Friday</button>
     <button type="button" class="button" id="button-saturday" onclick="toggleDays('saturday')">Saturday</button>
@@ -25,6 +26,7 @@
 
     <main>
         <div>
+            <!-- Day 1: Friday Artist Lineup -->
             <div class="day-wrapper" id="friday">
                 <div class="friday-artist-1">
                     <img src="images/the_1975.jpg" alt="the 1975">
@@ -41,6 +43,7 @@
                 </div>
             </div>
 
+            <!-- Day 2: Saturday Artist Lineup -->
             <div class="day-wrapper hide" id="saturday">
                 <div class="saturday-artist-1">
                     <img src="images/harry_styles.png" alt="harry styles">
@@ -57,6 +60,7 @@
                 </div>
             </div>
 
+            <!-- Day 3: Sunday Artist Lineup -->
             <div class="day-wrapper hide" id="sunday">
                 <div class="sunday-artist-1">
                     <img src="images/sam_fender.jpg" alt="Sam Fender">
@@ -74,6 +78,7 @@
             </div>
         </div>
         
+        <!-- Click button to "Get More Info About Peach Fest" Only need email address to Submit. JS contact form and hide & show for form with "X" click -->
         <button type="button" class="buy-tickets" onclick="showForm()">Buy Tickets</button>    
         <div class="contact-form hide" id="contact-form">
                 <div class="contact-form--wrap">
@@ -94,7 +99,8 @@
     
     </main>
     
-    <footer>
+    <footer> 
+        <!-- Footer with logo, Instagram, and Twitter links. Just link to personal pages for fun. -->
             <div class="footer-col">        
                 <img class="footer-logo" src="images/PF_logo.png" alt="PF_logo">
             </div>
